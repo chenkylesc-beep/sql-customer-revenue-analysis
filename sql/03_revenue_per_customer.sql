@@ -31,6 +31,6 @@ SELECT
 	active_customers,
 	total_revenue as monthly_revenue,
 	round(total_revenue/nullif(active_customers,0),2) as value_per_customer,
-	round(total_revenue/nullif(number_of_orders,0),2) as value_per_order
+	round(total_revenue/nullif(number_of_orders,0),2) as AOV
 	
 from monthly_revenue
